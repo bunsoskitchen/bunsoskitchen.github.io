@@ -1,11 +1,41 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    body {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
 html {
     background-color: #CFD8DC;
 }
 
 body {
     background-color: white;
-    margin-left: 15%;
-    margin-right: 15%;
 }
 
 h1 {
@@ -46,16 +76,23 @@ h4, p, li {
     margin-right: 10%;
 }
 
-table {
+.row {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 10%;
+    padding: 5px;
 }
 
 .profile-pic {
     border-radius: 50%;
     width: 130px;
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
